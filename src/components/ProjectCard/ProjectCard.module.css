@@ -1,0 +1,102 @@
+.basicInf{
+    display: flex;
+    height: 500px;
+    padding: 30px 4% 0 4%;
+}
+
+.projectImg{
+    width: 50%;
+    border: 1px solid #ccb7c0;
+    border-radius: 20px;
+    height: 90%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.projectInformation{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 0 30px;
+    align-items:  flex-start;
+}
+
+.projectTitle {
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.projectAnnotation {
+    font-size: 18px;
+    color: black;
+}
+.author{
+    font-size: 18px;
+    color: black;
+}
+.moneyBlock{
+    padding: 10px 0;
+    text-align: left;
+}
+.currentAmount{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.outOf{
+    font-size: 20px;
+    color: #ae99a2;
+    margin-right: 10px;
+}
+.totalAmount{
+    font-size: 20px;
+    color: #ae99a2;
+    margin-right: 10px;
+}
+.projectInformation.progress_US.ui.progress.bar{
+    background: #4183c4;
+    border-radius: 50px;
+}
+
+.progress_US{
+    width: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 0;
+    height: 24px;
+    background-color: #cccaef;
+}
+.buttonSupport{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    border: 0;
+    background-color: rgba(96, 113, 178, 0.75);
+}
+.menuProjectCart{
+    padding: 30px 4% 0 4%;
+    width: 70%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ui.progress .progress_US{
+    background: #4183c4 !important;
+}
+.ui.progress .bar{
+    background: #4183c4 !important;
+}
+

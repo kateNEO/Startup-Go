@@ -1,0 +1,33 @@
+/*.popularCont{*/
+/*    width: 100%;*/
+/*    height: 600px;*/
+/*    border-bottom: 1px solid gray;*/
+/*}*/
+
+.allPrjContent{
+    padding-top: 30px;
+    display: flex;
+}
+.navCategories{
+    border-right: 1px solid rgba(204,202,239,0.75);
+    width: 600px;
+    height: 800px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+.navCategories a{
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 600;
+    color: black;
+
+}
+.allProjectsArea{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+

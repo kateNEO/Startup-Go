@@ -1,0 +1,66 @@
+.projectItem{
+    width: 300px;
+    height: 450px;
+    margin: 0 0 30px 0 ;
+    border: 1px solid rgba(239,231,232,0.75);
+    border-radius: 20px;
+}
+.projectItemCard{
+    width: 300px;
+    height: 450px;
+}
+.projectItemImg{
+    height: 150px;
+    border-bottom: 1px solid rgba(237,217,222,0.75);
+    overflow: hidden;
+    object-fit: cover;
+}
+.projectInfo{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 10px;
+    height: 300px;
+    justify-content: space-between;
+}
+.projectItemTitle{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.projectItemAuthorName{
+    font-size: 16px;
+    color: black;
+}
+.moneyBlock{
+    margin-top: 10%;
+    text-align: left;
+}
+.currentAmount{
+    text-align: left;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 3px;
+    height: 20px;
+}
+.outOf{
+    font-size: 14px;
+    color: #ae99a2;
+
+}
+.totalAmount{
+    margin-left: 5px;
+    font-size: 16px;
+    color: #ae99a2;
+
+}
+.percentValue{
+    margin-left: 5px;
+    font-size: 16px;
+    color: #ae99a2;
+}
+.city{
+
+}

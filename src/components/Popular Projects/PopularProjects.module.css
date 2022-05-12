@@ -1,0 +1,17 @@
+.popularContent{
+    border-top: 1px solid rgba(204,202,239,0.75);
+    padding: 10px 4% 0 4%;
+    height: 1000px;
+}
+.headPopular{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 40px auto 40px 1%;
+    text-align: left;
+}
+.popProjectList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
