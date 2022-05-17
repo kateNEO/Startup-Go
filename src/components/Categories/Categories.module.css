@@ -2,29 +2,30 @@
     padding: 0 1% 0 1%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /*----cкидывает в столбец в нав----*/
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
     width: 100%;
     height: 60px;
     font-size: 14px;
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 550px) {
     .categories {
         padding: 0 4% 0 4%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; /*----cкидывает в столбец в нав----*/
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
         width: 100%;
-        height: 100px;
+        height: 80px;
         font-size: 20px;
     }
 }
 .categoriesLink {
-    padding: 10px 20px 0 0;
+    margin: 15px 10px 0 2%;
 }
-@media screen and (min-width: 450px) {
+
+@media screen and (min-width: 550px) {
     .categoriesLink {
-        padding: 40px 0 10px 0;
+        margin: 40px 10px 0 2%;
     }
 }

@@ -6,7 +6,7 @@ import styleProjectItem from "../ProjectItem/ProjectItem.module.css";
 const panes = [
     { menuItem: 'Project', pane: 'Tab 1 Content' },
     { menuItem: 'News', pane: 'Tab 2 Content' },
-    { menuItem: 'Comments', pane: 'Tab 3 Content' },
+    { menuItem: 'Comments', pane: 'Tab 3 Content' }
 ]
 const ProjectCard = () => {
     return (

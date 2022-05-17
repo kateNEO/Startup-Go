@@ -1,0 +1,8 @@
+.wrapper{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(69,133,194,0.86);
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.2) inset;
+    position: static;
+    bottom: 0;
+}

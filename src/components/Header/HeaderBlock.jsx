@@ -7,7 +7,7 @@ let HeaderBlock = (props) => {
     return(
         <div className={headerStyle.headerBlock}>
             <div className={headerStyle.leftPosition}>
-                <NavLink to ="/home" className={headerStyle.logo}>StartUp-Go</NavLink>
+                <NavLink to ="/" className={headerStyle.logo}>StartUp-Go</NavLink>
                 <a href ="/whatIs" className={headerStyle.headerLink}>What is this?</a>
                 <a href ="/allProject" className={headerStyle.headerLink}>All projects</a>
             </div>

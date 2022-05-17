@@ -1,26 +1,36 @@
-/*.popularCont{*/
-/*    width: 100%;*/
-/*    height: 600px;*/
-/*    border-bottom: 1px solid gray;*/
-/*}*/
-
 .allPrjContent{
     padding-top: 30px;
     display: flex;
 }
-.navCategories{
+.navCategories {
     border-right: 1px solid rgba(204,202,239,0.75);
-    width: 600px;
+    width: 150px;
     height: 800px;
-    font-size: 20px;
-    padding: 0 20px;
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: left;
+}
+@media screen and (min-width: 450px) {
+    .navCategories {
+        border-right: 1px solid rgba(204,202,239,0.75);
+        width: 400px;
+        height: 800px;
+        font-size: 20px;
+        padding: 0 20px;
+        text-align: left;
+    }
 }
 .navCategories a{
-    font-size: 22px;
-    padding: 10px;
+    font-size: 18px;
     font-weight: 600;
-    color: black;
-
+    color: #4183c4;
+}
+@media screen and (min-width: 450px) {
+    .navCategories a{
+        font-size: 22px;
+        font-weight: 600;
+        color: #4183c4;
+    }
 }
 .allProjectsArea{
     display: flex;
@@ -28,6 +38,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-left: 10px;
 }
 
 
