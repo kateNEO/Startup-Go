@@ -54,8 +54,21 @@
         color: black;
     }
 }
-.active{
-    color: #4183c4;
+.search{
+    width: 200px;
+    transition: width 0.4s ease-in-out;
+    border-radius: 50px;
+    background: rgba(179,196,225,0.42);
+    border: 0;
+    margin: 18px auto 0 0;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.search:focus{
+    width: 600px;
+    border: 1px solid rgba(166,183,213,0.42);
+    outline: none;
 }
 .rightPosition .headerLink{
     margin-left: 20px;

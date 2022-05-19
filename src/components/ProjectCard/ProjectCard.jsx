@@ -4,11 +4,17 @@ import { Progress } from 'semantic-ui-react'
 import { Tab } from 'semantic-ui-react'
 import styleProjectItem from "../ProjectItem/ProjectItem.module.css";
 const panes = [
-    { menuItem: 'Project', pane: 'Tab 1 Content' },
-    { menuItem: 'News', pane: 'Tab 2 Content' },
-    { menuItem: 'Comments', pane: 'Tab 3 Content' }
+    { menuItem: 'Project', pane: 'Here will be description of the project' },
+    { menuItem: 'News', pane: 'Here will be news about the development of the project' },
+    { menuItem: 'Comments', pane: 'Here you can ask questions or tell what you think about the project' }
 ]
 const ProjectCard = () => {
+    let rewardsData =[
+        { id:1, name: 'Name Rewards', description: 'Description Rewards', delivery: 'Date Delivery', price:'$$'},
+        { id:2, name: 'Name Rewards', description: 'Description Rewards', delivery: 'Date Delivery', price:'$$'},
+        { id:3, name: 'Name Rewards', description: 'Description Rewards', delivery: 'Date Delivery', price:'$$'}
+    ]
+    let rewardsElement = rewardsData.map(reward => <Reward key= {reward.id} name = {reward.name} description = {reward.description} delivery = {reward.delivery} price = {reward.price}/>)
     return (
         <div>
             <div className={styleProjectCard.basicInf}>
@@ -35,18 +41,27 @@ const ProjectCard = () => {
                     <Tab panes={panes} renderActiveOnly={false}/>
                 </div>
                 <div className={styleProjectCard.rewardsWrapper}>
-                    <Rewards/>
+                    <div className={styleProjectCard.headerRewards}> Choose a reward </div>
+                    {rewardsElement}
                 </div>
             </div>
         </div>
     )
 }
 
-const Rewards =()=>{
-    return(
+const Reward =(props)=>{
+    return (
         <div className={styleProjectCard.rewards}>
-
+            <div className={styleProjectCard.imgRewards}>img</div>
+            <div>{props.name}</div>
+            <div>{props.description}</div>
+            <div>{props.delivery}</div>
+            <div className={styleProjectCard.buyRewards}>
+                <div>{props.price}</div>
+                <button className={styleProjectCard.buyButton}>Buy</button>
+            </div>
         </div>
+
     )
 }
  export default ProjectCard

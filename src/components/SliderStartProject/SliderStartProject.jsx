@@ -6,7 +6,7 @@ const SliderStartProject= (props) => {
     return(
         <div className={sliderStyle.slide}>
             <div className={sliderStyle.textSlider}>Start Now</div>
-            <NavLink to="/startProject" className={sliderStyle.buttonCreate}>Create Project</NavLink>
+            <NavLink to="/createProject/Basic" className={sliderStyle.buttonCreate}>Create Project</NavLink>
         </div>
 
     )
