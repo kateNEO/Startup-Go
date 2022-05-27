@@ -8,6 +8,7 @@ import ProjectCard from "./components/ProjectCard/ProjectCard";
 import Footer from "./components/Footer/Footer";
 import SectionBasic from "./components/Sections/SectionBasic";
 import SectionInformation from "./components/Sections/SectionInformation";
+import MyProject from "./components/MyProject/MyProject";
 function App() {
   return (
       <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
                   <Route path="/nameProject" element={<ProjectCard/>}/>
                   <Route path="/createProject/Basic" element={<SectionBasic/>}/>
                   <Route path="/createProject/Information" element={<SectionInformation/>}/>
+                  <Route path="/myProject" element={<MyProject/>}/>
               </Routes>
               <Footer/>
           </div>

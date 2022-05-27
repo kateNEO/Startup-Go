@@ -14,8 +14,7 @@ let HeaderBlock = (props) => {
             </div>
             <input className={headerStyle.search} type="text" name="search" placeholder="Search.."/>
             <div className={headerStyle.rightPosition}>
-                <a className={headerStyle.headerLink}>Log in</a>
-                <a className={headerStyle.headerLink}>Sign up</a>
+                <NavLink to="/myProject" className={headerStyle.headerLink}>My project</NavLink>
             </div>
         </div>
     )
