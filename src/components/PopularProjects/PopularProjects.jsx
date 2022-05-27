@@ -10,13 +10,13 @@ const PopularProjects = (props) => {
             <div className={stylePopular.headPopular}>Popular Project</div>
             <div className={stylePopular.popProjectList}>
                 {projectElement}
-                {projectElement}
-                {projectElement}
-                {projectElement}
-                {projectElement}
-                {projectElement}
-                {projectElement}
-                {projectElement}
+                {/*{projectElement}*/}
+                {/*{projectElement}*/}
+                {/*{projectElement}*/}
+                {/*{projectElement}*/}
+                {/*{projectElement}*/}
+                {/*{projectElement}*/}
+                {/*{projectElement}*/}
             </div>
 
         </div>

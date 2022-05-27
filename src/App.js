@@ -9,16 +9,19 @@ import Footer from "./components/Footer/Footer";
 import SectionBasic from "./components/Sections/SectionBasic";
 import SectionInformation from "./components/Sections/SectionInformation";
 import MyProject from "./components/MyProject/MyProject";
-function App() {
+
+
+function App(props) {
+
   return (
       <BrowserRouter>
           <div className="App">
               <HeaderBlock/>
               <Routes>
-                  <Route path="/" element ={<HomeContent/>}/>
-                  <Route path="/allProject" element={<AllProjectList/>}/>
+                  <Route path="/" element ={<HomeContent projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
+                  <Route path="/allProject" element={<AllProjectList projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
                   <Route path="/nameProject" element={<ProjectCard/>}/>
-                  <Route path="/createProject/Basic" element={<SectionBasic/>}/>
+                  <Route path="/createProject/Basic" element={<SectionBasic categoryData={props.categoryData} menuItemData={props.menuItemData}/>}/>
                   <Route path="/createProject/Information" element={<SectionInformation/>}/>
                   <Route path="/myProject" element={<MyProject/>}/>
               </Routes>

@@ -1,4 +1,5 @@
 .allPrjContent{
+    margin-top: 15px;
     padding-top: 30px;
     display: flex;
 }
@@ -10,35 +11,38 @@
     padding: 0 10px;
     text-align: left;
 }
-@media screen and (min-width: 450px) {
-    .navCategories {
-        border-right: 1px solid rgba(204,202,239,0.75);
-        width: 400px;
-        height: 800px;
-        font-size: 20px;
-        padding: 0 60px;
-        text-align: left;
-    }
-}
+
 .navCategories a{
     font-size: 18px;
     font-weight: 600;
     color: #4183c4;
 }
-@media screen and (min-width: 450px) {
-    .navCategories a{
-        font-size: 22px;
-        font-weight: 600;
-        color: #4183c4;
-    }
-}
+
 .allProjectsArea{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 10px;
+    margin-left: 5%;
 }
+@media screen and (min-width: 550px) {
+    .navCategories a{
+        font-size: 22px;
+        font-weight: 600;
+        color: #4183c4;
+    }
+    .navCategories {
+        border-right: 1px solid rgba(204,202,239,0.75);
+        width: 300px;
+        height: 800px;
+        font-size: 20px;
+        padding: 0 60px;
+        text-align: left;
+    }
+    .allPrjContent{
+        margin-top: 0;
 
+    }
+}
 

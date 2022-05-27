@@ -2,24 +2,21 @@ import React from "react";
 import styleAllProjectList from "./AllProjectList.module.css"
 
 import ProjectItem from "../ProjectItem/ProjectItem";
-import Categories from "../Categories/Categories";
+import Category from "../Categories/Category";
 
 
-const AllProjectList =()=>{
+const AllProjectList =(props)=>{
+    let categoryElements = props.categoryData.map (category => <Category key= {category.id} name= {category.name}/>)
+    let projectAllElement = props.projectItemData.map(item => <ProjectItem key={item.id} name ={item.name} currentAmount={item.received} totalAmount={item.goal}/>)
     return (
         <div className={styleAllProjectList.allPrjContent}>
             <div className={styleAllProjectList.navCategories}>
-                <Categories/>
+                {categoryElements}
             </div>
             <div className={styleAllProjectList.allProjectsArea}>
-                <ProjectItem/>
-                <ProjectItem/>
-                <ProjectItem/>
-                <ProjectItem/>
-                <ProjectItem/>
-                <ProjectItem/>
-                <ProjectItem/>
-                <ProjectItem/>
+                {projectAllElement}
+
+
             </div>
         </div>
     )

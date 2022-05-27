@@ -5,15 +5,7 @@
     justify-content: space-between;
     padding: 0 1% 0 1%;
 }
-@media screen and (min-width: 740px) {
-    .headerBlock {
-        height: 60px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 4% 0 4%;
-    }
-}
+
 .logo {
     margin-right: 5px;
     color: black;
@@ -21,15 +13,7 @@
     font-weight: 600;
     letter-spacing: 2px;
 }
-@media screen and (min-width: 740px) {
-    .logo {
-        margin-right: 20px;
-        color: black;
-        font-size: 36px;
-        font-weight: 600;
-        letter-spacing: 4px;
-    }
-}
+
 .leftPosition {
     display: flex;
     justify-content: space-between;
@@ -40,6 +24,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding-right: 7px;
 
 }
 .headerLink {
@@ -47,32 +32,62 @@
     font-size: 14px;
     color: black;
 }
-@media screen and (min-width: 450px) {
-    .headerLink {
-        margin-top: 5px;
-        font-size: 20px;
-        color: black;
-    }
-}
 .search{
-    width: 200px;
-    transition: width 0.4s ease-in-out;
-    border-radius: 50px;
-    background: rgba(179,196,225,0.42);
-    border: 0;
-    margin: 18px auto 0 0;
-    height: 30px;
-    padding-left: 10px;
-    font-size: 16px;
-}
+     width: 98%;
+     transition: width 0.4s ease-in-out;
+     border-radius: 50px;
+     background: rgba(179,196,225,0.42);
+     border: 0;
+     margin: 18px auto 0 0;
+     height: 30px;
+     padding-left: 10px;
+     font-size: 12px;
+     position: absolute;
+     top:45px
+ }
 .search:focus{
-    width: 600px;
     border: 1px solid rgba(166,183,213,0.42);
     outline: none;
 }
+
 .rightPosition .headerLink{
     margin-left: 20px;
 }
 .leftPosition .headerLink {
     margin-right: 20px;
+}
+@media screen and (min-width: 550px) {
+    .headerLink {
+        margin-top: 5px;
+        font-size: 20px;
+        color: black;
+    }
+    .search{
+        width: 20%;
+        font-size: 16px;
+        position: inherit;
+    }
+    .search:focus{
+        width: 64%;
+        border: 1px solid rgba(166,183,213,0.42);
+        outline: none;
+    }
+    .logo {
+        margin-right: 20px;
+        color: black;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 4px;
+    }
+    .headerBlock {
+        height: 60px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4% 0 4%;
+    }
+    .rightPosition{
+        padding-right: 0;
+
+    }
 }
