@@ -1,23 +1,29 @@
 import React from "react";
 import styleProfile from "./MyProject.module.css"
 import ProjectItem from "../ProjectItem/ProjectItem";
+import {NavLink} from "react-router-dom";
 
 const MyProject = () =>{
-    let projectUserData =[
-        {id:1, img: '', name:'', author: '', currentAmount: '', totalAmount: '', status: '' }
-    ];
+
     return(
         <div className={styleProfile.myProjectWrapper}>
-            <div className={styleProfile.myProject}>
 
+            <div className={styleProfile.myProject}>
+                <UserProject/>
+                <UserProject/>
+                <UserProject/>
             </div>
+            <NavLink to="/createProject/Basic" className={styleProfile.buttonNewProject}>Create Project</NavLink>
         </div>
     )
 }
-const ProjectUser = () =>{
-    return(
-        <div className={styleProfile.projectItem}>
-
+const UserProject = () => {
+    return (
+        <div className={styleProfile.projectItemWrapper}>
+            <div className={styleProfile.imgUserProjectWrapper}>
+                <img className={styleProfile.imgUserProject}/>
+            </div>
+            <p className={styleProfile.UserProjectName}>Name</p>
         </div>
     )
 }

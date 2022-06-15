@@ -1,31 +1,10 @@
-.categories {
-    padding: 0 1% 0 1%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-    height: 60px;
-    font-size: 14px;
-}
-@media screen and (min-width: 550px) {
-    .categories {
-        padding: 0 4% 0 4%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        height: 80px;
-        font-size: 20px;
-    }
-}
+
 .categoriesLink {
-    margin: 15px 10px 0 2%;
+    margin: 5px 15px 0 0;
 }
 
-@media screen and (min-width: 550px) {
-    .categoriesLink {
-        margin: 40px 10px 0 2%;
-    }
-}
+/*@media screen and (min-width: 550px) {*/
+/*    .categoriesLink {*/
+/*        margin: 40px 10px 0 2%;*/
+/*    }*/
+/*}*/

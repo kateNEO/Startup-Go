@@ -22,7 +22,7 @@ function App(props) {
                   <Route path="/allProject" element={<AllProjectList projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
                   <Route path="/nameProject" element={<ProjectCard/>}/>
                   <Route path="/createProject/Basic" element={<SectionBasic categoryData={props.categoryData} menuItemData={props.menuItemData}/>}/>
-                  <Route path="/createProject/Information" element={<SectionInformation/>}/>
+                  <Route path="/createProject/Information" element={<SectionInformation menuItemData={props.menuItemData}/>}/>
                   <Route path="/myProject" element={<MyProject/>}/>
               </Routes>
               <Footer/>

@@ -1,0 +1,19 @@
+.homeCategory{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 4% 15px 4%;
+    border-bottom: 1px solid rgba(204,202,239,0.75);
+    font-size: 14px;
+    height: 70px;
+    align-items: center;
+}
+
+@media screen and (min-width: 550px) {
+    .homeCategory{
+        justify-content: space-between;
+        font-size: 20px;
+    }
+}

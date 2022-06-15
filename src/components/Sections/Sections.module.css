@@ -1,0 +1,140 @@
+.sectionBasicWrapper{
+    width: 100%;
+}
+.basicWrapper{
+    text-align: left;
+    border-bottom: 10px solid white;
+    background-color:  rgba(142,163,255,0.11);
+    padding: 5px 20px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.headerSections{
+    margin: 10px 0 10px 20px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+}
+.basicForm{
+    background-color: rgba(179,196,225,0.42);
+    padding: 10px 30px;
+}
+.headerInput{
+    margin: 10px 0;
+}
+
+.inputText {
+    border: 1px solid #cbcbcb;
+    width: 90%;
+}
+
+.inputText:focus {
+    outline: 1px solid rgba(69, 133, 194, 0.86);
+    border-radius: 0;
+}
+
+.preview {
+
+}
+
+.imgPreview {
+    object-fit: cover;
+    width: 100%;
+    height: 330px;
+
+}
+
+.uploader {
+    border: 1px dashed #cbcbcb;
+    width: 90%;
+    height: 400px;
+    padding: 10px;
+    overflow: hidden;
+}
+.inputFile{
+    opacity: 0;
+    width: 70%;
+    height: 380px;
+    position: absolute;
+}
+.labelImg{
+    color: #4183c4;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.select{
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-radius: 0;
+    border: 1px solid #cbcbcb;
+    font-weight: lighter;
+    height: 30px;
+}
+.select:focus{
+    outline: 1px solid rgba(69,133,194,0.86);
+    border-radius: 0;
+}
+option{
+    margin-top: 100px !important;
+    width: 1000px !important;
+}
+
+
+.inputNumber{
+    width: 100px;
+    border: 1px solid #cbcbcb;
+}
+
+.bottomBasicWrapper{
+    padding: 5px 20px;
+    margin: 0;
+    background-color: rgba(142,163,255,0.11);
+    text-align: right;
+    height: 80px;
+}
+
+.buttonNext{
+    position: relative;
+    top: 25px;
+    border: 0;
+    font-weight: lighter;
+    border-radius: 3px;
+    background-color: rgba(96, 113, 178, 0.75);
+    color: white;
+    padding: 7px 20px;
+}
+
+@media screen and (min-width: 550px) {
+    .basicWrapper{
+        margin: 0 15%;
+        padding: 15px 30px;
+        font-size: 22px;
+    }
+    .headerSections{
+        margin: 20px 0 20px 17%;
+        font-size: 24px;
+    }
+    .uploader{
+        width: 70%;
+    }
+    .inputText{
+        width: 70%;
+    }
+    .select{
+        width: 70%;
+    }
+    .bottomBasicWrapper{
+        padding: 0 20px;
+        margin: 0 15%;
+    }
+    .inputFile{
+        width: 490px;
+    }
+    .buttonNext{
+
+    }
+}

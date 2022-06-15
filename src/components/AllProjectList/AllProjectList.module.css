@@ -10,12 +10,12 @@
     font-size: 14px;
     padding: 0 10px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .navCategories a{
-    font-size: 18px;
-    font-weight: 600;
-    color: #4183c4;
+    margin-bottom: 20px;
 }
 
 .allProjectsArea{
@@ -30,11 +30,10 @@
     .navCategories a{
         font-size: 22px;
         font-weight: 600;
-        color: #4183c4;
     }
     .navCategories {
         border-right: 1px solid rgba(204,202,239,0.75);
-        width: 300px;
+        width: 250px;
         height: 800px;
         font-size: 20px;
         padding: 0 60px;
@@ -42,7 +41,6 @@
     }
     .allPrjContent{
         margin-top: 0;
-
     }
 }
 
