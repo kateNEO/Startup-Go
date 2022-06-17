@@ -78,11 +78,14 @@
     outline: 1px solid rgba(69,133,194,0.86);
     border-radius: 0;
 }
-option{
-    margin-top: 100px !important;
-    width: 1000px !important;
-}
+.option{
 
+}
+.textArea{
+
+    font-size: 16px;
+    height: 200px;
+}
 
 .inputNumber{
     width: 100px;
@@ -123,9 +126,11 @@ option{
     }
     .inputText{
         width: 70%;
+        font-weight: lighter;
     }
     .select{
         width: 70%;
+
     }
     .bottomBasicWrapper{
         padding: 0 20px;

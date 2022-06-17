@@ -23,9 +23,6 @@ const ProjectCard = () => {
                     <div className={styleProjectCard.projectTitle}>Name ProjectName</div>
                     <div className={styleProjectCard.projectAnnotation}> I'm cool project! Finance me!</div>
                     <div className={styleProjectCard.author}>Author</div>
-                    <div className={styleProjectItem.city}>
-                        <span className={styleProjectItem.city}>City</span>
-                    </div>
                     <div className={styleProjectCard.moneyBlock}>
                         <div className={styleProjectCard.currentAmount}>1000$</div>
                         <span className={styleProjectCard.outOf}>out of</span>

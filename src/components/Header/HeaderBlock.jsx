@@ -8,8 +8,8 @@ let HeaderBlock = (props) => {
         <div className={headerStyle.headerBlock}>
             <div className={headerStyle.leftPosition}>
                 <NavLink to ="/" className={headerStyle.logo}>StartUp-Go</NavLink>
-                <a href ="/whatIs" className={headerStyle.headerLink}>What is this?</a>
-                <a href ="/allProject" className={headerStyle.headerLink}>All projects</a>
+                <NavLink to= "/whatIs" className={headerStyle.headerLink}>What is this?</NavLink>
+                <NavLink to= "/allProject/category/" className={headerStyle.headerLink}>All projects</NavLink>
 
             </div>
             <input className={headerStyle.search} type="text" name="search" placeholder="Search.."/>

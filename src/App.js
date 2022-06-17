@@ -7,8 +7,8 @@ import AllProjectList from "./components/AllProjectList/AllProjectList";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 import Footer from "./components/Footer/Footer";
 import SectionBasic from "./components/Sections/SectionBasic";
-import SectionInformation from "./components/Sections/SectionInformation";
 import MyProject from "./components/MyProject/MyProject";
+import ResultPage from "./components/ResultPage/ResultPage";
 
 
 function App(props) {
@@ -19,11 +19,11 @@ function App(props) {
               <HeaderBlock/>
               <Routes>
                   <Route path="/" element ={<HomeContent projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
-                  <Route path="/allProject" element={<AllProjectList projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
+                  <Route path="/allProject/category/" element={<AllProjectList projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
                   <Route path="/nameProject" element={<ProjectCard/>}/>
                   <Route path="/createProject/Basic" element={<SectionBasic categoryData={props.categoryData} menuItemData={props.menuItemData}/>}/>
-                  <Route path="/createProject/Information" element={<SectionInformation menuItemData={props.menuItemData}/>}/>
                   <Route path="/myProject" element={<MyProject/>}/>
+                  <Route path="/allProject/category/:name" element={<ResultPage projectItemData ={props.projectItemData}/>}/>
               </Routes>
               <Footer/>
           </div>

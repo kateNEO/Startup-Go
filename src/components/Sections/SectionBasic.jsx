@@ -20,7 +20,7 @@ class SectionBasic extends React.Component {
         let newImgURL = URL.createObjectURL(files[0]);
         this.setState({ imgURL : newImgURL });
         console.log(this.state.imgURL);
-        this.createImg();
+
     }
 
    createImg() {
@@ -33,7 +33,7 @@ class SectionBasic extends React.Component {
 
     render() {
 
-        let categoryOptions = this.state.categoryData.map(categoryOptions => <option className={styleSectionBasic.options}
+        let categoryOptions = this.state.categoryData.map(categoryOptions => <option className={styleSectionBasic.option}
                                                                                      key={categoryOptions.id}
                                                                                      value={categoryOptions.name}>{categoryOptions.name}</option>)
         return (
@@ -54,17 +54,14 @@ class SectionBasic extends React.Component {
                     </div>
                     <p className={styleSectionBasic.headerInput}>Short description</p>
                     <input className={styleSectionBasic.inputText} type={"text"}/>
-                    <p>Select a category</p>
+                    <p className={styleSectionBasic.headerInput}>About project</p>
+                    <input className={`${styleSectionBasic.inputText} ${styleSectionBasic.textArea}`} type={"text"}/>
+                    <p className={styleSectionBasic.headerInput}> Select a category</p>
                     <select className={styleSectionBasic.select} name="category" id="category">
                         {categoryOptions}
-                        <option className={styleSectionBasic.option}></option>
+                        {/*<option className={styleSectionBasic.option}></option>*/}
                     </select>
-                    <p className={styleSectionBasic.headerInput}>City</p>
-                    <input className={styleSectionBasic.inputText} type={"text"}/>
-                    <p className={styleSectionBasic.headerInput}>Project duration</p>
-                    <input className={styleSectionBasic.inputNumber} type={"number"} min={"30"} max={"60"}/>
-                    <span> days</span>
-                    <p className={styleSectionBasic.headerInput}>Required amount</p>
+                    <p className={styleSectionBasic.headerInput}>Expected amount</p>
                     <input className={styleSectionBasic.inputNumber} type={"number"}/>
                     <span> $</span>
                 </div>

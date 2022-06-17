@@ -18,9 +18,6 @@ const ProjectItem =(props)=>{
                         <span className={styleProjectItem.totalAmount}>{props.totalAmount}$</span>
                         <span className={styleProjectItem.percentValue}>(10%)</span>
                     </div>
-                    <div className={styleProjectItem.city}>
-                        <span className={styleProjectItem.city}>City</span>
-                    </div>
                 </div>
             </NavLink>
         </div>

@@ -3,6 +3,7 @@ import styleAllProjectList from "./AllProjectList.module.css"
 
 import ProjectItem from "../ProjectItem/ProjectItem";
 import Category from "../Categories/Category";
+import ResultPage from "../ResultPage/ResultPage";
 
 
 const AllProjectList =(props)=>{
@@ -14,8 +15,8 @@ const AllProjectList =(props)=>{
                 {categoryElements}
             </div>
             <div className={styleAllProjectList.allProjectsArea}>
-                {projectAllElement}
 
+              <ResultPage projectItemData ={props.projectItemData}/>
 
             </div>
         </div>

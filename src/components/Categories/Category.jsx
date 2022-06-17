@@ -1,18 +1,13 @@
 import React from "react";
 import categoriesStyle from "./Categories.module.css"
+import {NavLink, useParams} from "react-router-dom";
 
-// const Categories = (props) => {
-//
-//     let categoryElements = props.categoryData.map (category => <Category key= {category.id} name= {category.name}/>)
-//     return(
-//         <div className={categoriesStyle.categories}>
-//             {categoryElements}
-//         </div>
-//     )
-// }
+
 const Category =(props) =>{
+    let pathLink = "/allProject/category/" + props.name;
     return(
-        <a className={categoriesStyle.categoriesLink}>{props.name}</a>
+        <NavLink to={pathLink} className={categoriesStyle.categoriesLink}>{props.name}</NavLink>
+
     )
 }
 

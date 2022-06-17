@@ -10,7 +10,6 @@ const HomeContent = (props) =>{
         <div>
             <SliderStartProject/>
             <div className={styleHomeContent.homeCategory}>{categoryElements}</div>
-
             <PopularProjects projectItemData ={props.projectItemData}/>
         </div>
     )

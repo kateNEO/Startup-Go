@@ -14,11 +14,8 @@ let n = async () => {
 n();
 let menuItemData =[
     {id:1, number:'1', name:'Basic'},
-    {id:2, number:'2', name:'Information'},
-    {id:3, number:'3', name:'Rewards'},
-    {id:4, number:'4', name:'About Me'},
-    {id:5, number:'5', name:'Bank account'},
-    {id:6, number:'6', name:'Verification'}
+    {id:2, number:'2', name:'Rewards'},
+    {id:3, number:'3', name:'Verification'}
 ]
 let categoryData =[
     {id:1, name: 'Arts'},
@@ -38,6 +35,7 @@ let projectItemData = [
         transactionHash:"0xe0950a073ee637b46f8d5d0792eff10db9662e3f1ad65c6fe130a617d5a5f2a8",
         isActive:true,
         name:"На шавуху",
+        category:"Food & Craft",
         description:"Хочется кушоц",
         goal:200,
         received:13,
@@ -50,8 +48,37 @@ let projectItemData = [
         address:"0xC701263fF892F2447f24e3c0Ac2f36AEc4A42c38",
         transactionHash:"0xe0950a073ee637b46f8d5d0792eff10db9662e3f1ad65c6fe130a617d5a5f2a8",
         isActive:true,
-        name:"На шавуху 2.0",
+        name:"На шаурмичку",
+        category:"Food & Craft",
         description:"Хочется кушоц",
+        goal:200,
+        received:13,
+        requestAcceptanceThreshold:80,
+        onLeaveCommission:100
+    },
+    {
+        id: 3,
+        creatorAddress:"0x35b92fCd4366B048128f90D799343773567ca3B0",
+        address:"0xC701263fF892F2447f24e3c0Ac2f36AEc4A42c38",
+        transactionHash:"0xe0950a073ee637b46f8d5d0792eff10db9662e3f1ad65c6fe130a617d5a5f2a8",
+        isActive:true,
+        name:"На помощь котикам",
+        category:"Publishing",
+        description:"Любите котиков",
+        goal:200,
+        received:13,
+        requestAcceptanceThreshold:80,
+        onLeaveCommission:100
+    },
+    {
+        id: 4,
+        creatorAddress:"0x35b92fCd4366B048128f90D799343773567ca3B0",
+        address:"0xC701263fF892F2447f24e3c0Ac2f36AEc4A42c38",
+        transactionHash:"0xe0950a073ee637b46f8d5d0792eff10db9662e3f1ad65c6fe130a617d5a5f2a8",
+        isActive:true,
+        name:"Фанфики рулят",
+        category:"Comics & Illustration",
+        description:"Рисуй на здоровье",
         goal:200,
         received:13,
         requestAcceptanceThreshold:80,
