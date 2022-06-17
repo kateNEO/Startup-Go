@@ -1,0 +1,28 @@
+.navCategories {
+    border-right: 1px solid rgba(204,202,239,0.75);
+    width: 150px;
+    height: 800px;
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.navCategories a{
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 550px) {
+    .navCategories a {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .navCategories {
+        border-right: 1px solid rgba(204, 202, 239, 0.75);
+        width: 250px;
+        height: 800px;
+        font-size: 20px;
+        padding: 0 60px;
+        text-align: left;
+    }
+}

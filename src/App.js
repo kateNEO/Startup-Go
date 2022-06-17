@@ -19,11 +19,11 @@ function App(props) {
               <HeaderBlock/>
               <Routes>
                   <Route path="/" element ={<HomeContent projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
-                  <Route path="/allProject/category/" element={<AllProjectList projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
+                  {/*<Route path="/allProject/category/" element={<AllProjectList projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>*/}
                   <Route path="/nameProject" element={<ProjectCard/>}/>
                   <Route path="/createProject/Basic" element={<SectionBasic categoryData={props.categoryData} menuItemData={props.menuItemData}/>}/>
                   <Route path="/myProject" element={<MyProject/>}/>
-                  <Route path="/allProject/category/:name" element={<ResultPage projectItemData ={props.projectItemData}/>}/>
+                  <Route path="/allProject/category/:name" element={<ResultPage projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
               </Routes>
               <Footer/>
           </div>
