@@ -18,11 +18,11 @@ class ResultPage extends React.Component {
         let categoryElements = this.state.categoryData.map(category => <Category key={category.id}
                                                                                  name={category.name}/>)
         return (
-            <div>
+            <div className={styleResultPage.allPrjContent}>
                 <div className={styleResultPage.navCategories}>
                     {categoryElements}
                 </div>
-                <FindParam projectItemData={this.state.projectItemData}/>
+                    <FindParam projectItemData={this.state.projectItemData}/>
             </div>
         )
     }
@@ -53,7 +53,7 @@ const FindParam = (props) => {
     }
 
     return (
-        <div>
+        <div className={styleResultPage.allProjectsArea}>
             {projectOfCategoryElement}
         </div>
     )
