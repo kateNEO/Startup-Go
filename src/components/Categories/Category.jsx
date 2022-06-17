@@ -4,7 +4,7 @@ import {NavLink, useParams} from "react-router-dom";
 
 
 const Category =(props) =>{
-    let pathLink = "/allProject/category/" + props.name;
+    let pathLink = "/category/" + props.name;
     return(
         <NavLink to={pathLink} className={categoriesStyle.categoriesLink}>{props.name}</NavLink>
 

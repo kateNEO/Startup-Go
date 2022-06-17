@@ -3,7 +3,6 @@ import React from "react";
 import HeaderBlock from "./components/Header/HeaderBlock.jsx"
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import HomeContent from "./components/HomeContent/HomeContent";
-import AllProjectList from "./components/AllProjectList/AllProjectList";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 import Footer from "./components/Footer/Footer";
 import SectionBasic from "./components/Sections/SectionBasic";
@@ -22,7 +21,7 @@ function App(props) {
                   <Route path="/nameProject" element={<ProjectCard/>}/>
                   <Route path="/createProject/Basic" element={<SectionBasic categoryData={props.categoryData} menuItemData={props.menuItemData}/>}/>
                   <Route path="/myProject" element={<MyProject/>}/>
-                  <Route path="/allProject/category/:name" element={<ResultPage projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
+                  <Route path="/category/:name" element={<ResultPage projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
               </Routes>
               <Footer/>
           </div>
