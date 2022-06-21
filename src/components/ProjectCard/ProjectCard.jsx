@@ -8,19 +8,24 @@ const panes = [
     { menuItem: 'News', pane: 'Here will be news about the development of the project' },
     { menuItem: 'Comments', pane: 'Here you can ask questions or tell what you think about the project' }
 ]
-const ProjectCard = () => {
+const ProjectCard = (props) => {
     let rewardsData =[
         { id:1, name: 'Name Rewards', description: 'Description Rewards', delivery: 'Date Delivery', price:'$$'},
         { id:2, name: 'Name Rewards', description: 'Description Rewards', delivery: 'Date Delivery', price:'$$'},
         { id:3, name: 'Name Rewards', description: 'Description Rewards', delivery: 'Date Delivery', price:'$$'}
     ]
-    let rewardsElement = rewardsData.map(reward => <Reward key= {reward.id} name = {reward.name} description = {reward.description} delivery = {reward.delivery} price = {reward.price}/>)
+    let rewardsElement = rewardsData.map(reward => <Reward key= {reward.id}
+                                                           name = {reward.name}
+                                                           description = {reward.description}
+                                                           delivery = {reward.delivery}
+                                                           price = {reward.price}/>)
+
     return (
         <div>
             <div className={styleProjectCard.basicInf}>
                 <div className={styleProjectCard.projectImg}>Img</div>
                 <div className={styleProjectCard.projectInformation}>
-                    <div className={styleProjectCard.projectTitle}>Name ProjectName</div>
+                    <div className={styleProjectCard.projectTitle}>name</div>
                     <div className={styleProjectCard.projectAnnotation}> I'm cool project! Finance me!</div>
                     <div className={styleProjectCard.author}>Author</div>
                     <div className={styleProjectCard.moneyBlock}>

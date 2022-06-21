@@ -15,6 +15,7 @@ class ResultPage extends React.Component {
     }
 
     render() {
+        window.scrollTo(0,0);
         let categoryElements = this.state.categoryData.map(category => <Category key={category.id}
                                                                                  name={category.name}/>)
         return (
@@ -22,13 +23,13 @@ class ResultPage extends React.Component {
                 <div className={styleResultPage.navCategories}>
                     {categoryElements}
                 </div>
-                    <FindParam projectItemData={this.state.projectItemData}/>
+                    <FilterProject projectItemData={this.state.projectItemData}/>
             </div>
         )
     }
 }
 
-const FindParam = (props) => {
+const FilterProject = (props) => {
     let projectOfCategory = [];
     let {name} = useParams();
     let projectOfCategoryElement;

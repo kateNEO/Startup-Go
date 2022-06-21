@@ -1,13 +1,18 @@
 import React from "react";
 import styleProjectItem from "./ProjectItem.module.css"
 import {NavLink} from "react-router-dom";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 
 const ProjectItem =(props)=>{
-
+ //    let projectInformation = props.projectItemData.map(projectInformation => <ProjectCard key={projectInformation.id}
+ //                                                                                          name ={projectInformation.name}/>
+ // )
+     let pathProject="/project/"+props.id;
     return(
+
         <div className={styleProjectItem.projectItem}>
-            <NavLink to="/nameProject" className={styleProjectItem.projectItemCard}>
+            <NavLink to={pathProject} className={styleProjectItem.projectItemCard}>
                 <div className={styleProjectItem.projectItemImg}>img</div>
                 <div className={styleProjectItem.projectInfo}>
                     <div className={styleProjectItem.projectItemTitle}>{props.name}</div>

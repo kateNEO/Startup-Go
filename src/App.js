@@ -18,7 +18,7 @@ function App(props) {
               <HeaderBlock/>
               <Routes>
                   <Route path="/" element ={<HomeContent projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
-                  <Route path="/nameProject" element={<ProjectCard/>}/>
+                  <Route path="/project/:id" element={<ProjectCard projectItemData ={props.projectItemData}/>}/>
                   <Route path="/createProject/Basic" element={<SectionBasic categoryData={props.categoryData} menuItemData={props.menuItemData}/>}/>
                   <Route path="/myProject" element={<MyProject/>}/>
                   <Route path="/category/:name" element={<ResultPage projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
