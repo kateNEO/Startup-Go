@@ -16,12 +16,12 @@ let HeaderBlock = (props) => {
 //     })
 //}
 
-    const [value, setValue] = useState("");
-
-    function inputChange(newValue){
-            setValue(newValue);
-    }
-
+    // const [value, setValue] = useState("");
+    //
+    // function inputChange(newValue){
+    //         setValue(newValue);
+    // }
+    //
 
 
     return (
@@ -46,7 +46,6 @@ const Input=()=>{
         let inputSearch = document.getElementById("inputSearch");
         let newValue=inputSearch.value;
         console.log(newValue);
-        inputChange(newValue);
     }
 };
     return(
