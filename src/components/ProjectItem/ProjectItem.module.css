@@ -4,6 +4,7 @@
     margin: 0 60px 30px 0 ;
     border: 1px solid rgba(239,231,232,0.75);
     border-radius: 20px;
+    overflow: hidden;
 }
 .projectItemCard{
     width: 300px;
@@ -11,9 +12,8 @@
 }
 .projectItemImg{
     height: 150px;
-    border-bottom: 1px solid rgba(237,217,222,0.75);
-    overflow: hidden;
     object-fit: cover;
+    width: 100%;
 }
 .projectInfo{
     display: flex;

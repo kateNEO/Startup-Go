@@ -1,5 +1,4 @@
 .navCategories {
-    border-right: 1px solid rgba(204,202,239,0.75);
     width: 150px;
     height: 800px;
     font-size: 14px;
@@ -20,7 +19,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 5%;
+    margin-left: 1%;
 }
 @media screen and (min-width: 550px) {
     .navCategories a {
@@ -42,5 +41,6 @@
     .allProjectsArea{
         flex-direction: row;
         align-items: flex-start;
+        margin-left: 5%;
     }
 }

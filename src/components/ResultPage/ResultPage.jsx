@@ -50,7 +50,12 @@ const FilterProject = (props) => {
     function mappingArr(projectArr) {
         projectOfCategoryElement = projectArr.map(projectOfCategoryElement => <ProjectItem
             key={projectOfCategoryElement.id}
-            name={projectOfCategoryElement.name}/>)
+            id={projectOfCategoryElement.id}
+            name={projectOfCategoryElement.name}
+            img={projectOfCategoryElement.img}
+            currentAmount={projectOfCategoryElement.received}
+            expectedAmount ={projectOfCategoryElement.goal}
+            category={projectOfCategoryElement.category} />)
     }
 
     return (
