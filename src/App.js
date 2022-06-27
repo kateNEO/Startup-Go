@@ -12,6 +12,8 @@ import ResultPage from "./components/ResultPage/ResultPage";
 
 function App(props) {
 
+
+
   return (
       <BrowserRouter>
           <div className="App">
@@ -22,6 +24,7 @@ function App(props) {
                   <Route path="/createProject/Basic" element={<SectionBasic categoryData={props.categoryData} menuItemData={props.menuItemData}/>}/>
                   <Route path="/myProject" element={<MyProject/>}/>
                   <Route path="/category/:name" element={<ResultPage projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
+                  <Route path="/search/:value" element={<ResultPage projectItemData ={props.projectItemData} categoryData={props.categoryData}/>}/>
               </Routes>
               <Footer/>
           </div>

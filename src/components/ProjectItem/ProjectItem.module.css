@@ -1,7 +1,7 @@
 .projectItem{
-    width: 270px;
-    height: 400px;
-    margin: 0 60px 30px 0 ;
+    width: 260px;
+    height: 370px;
+    margin: 0 0 30px 0 ;
     border: 1px solid rgba(239,231,232,0.75);
     border-radius: 20px;
     overflow: hidden;
@@ -20,7 +20,7 @@
     align-items: flex-start;
     flex-direction: column;
     padding: 20px 10px;
-    height: 250px;
+    height: 220px;
     justify-content: space-between;
 }
 .projectItemTitle{
@@ -61,6 +61,8 @@
     font-size: 16px;
     color: #ae99a2;
 }
-.city{
-
+@media screen and (min-width: 550px) {
+    .projectItem{
+        margin: 0 60px 30px 0 ;
+    }
 }

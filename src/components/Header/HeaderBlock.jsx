@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import headerStyle from "./HeaderBlock.module.css"
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate, useParams} from "react-router-dom";
 import {useState} from "react";
+import ResultPage from "../ResultPage/ResultPage";
 
 let HeaderBlock = (props) => {
 
@@ -31,25 +32,40 @@ let HeaderBlock = (props) => {
                 <NavLink to="/whatIs" className={headerStyle.headerLink}>What is this?</NavLink>
                 <NavLink to="/category/all" className={headerStyle.headerLink}>All projects</NavLink>
             </div>
-            <Input />
+            <Input/>
             <div className={headerStyle.rightPosition}>
                 <NavLink to="/myProject" className={headerStyle.headerLink}>My project</NavLink>
             </div>
+
         </div>
+
     )
 }
 
 
-const Input=()=>{
-    const clickEvent=(e)=>{
-    if (e.key === "Enter") {
-        let inputSearch = document.getElementById("inputSearch");
-        let newValue=inputSearch.value;
-        console.log(newValue);
-    }
-};
-    return(
-        <input id="inputSearch" className={headerStyle.search} onKeyDown={clickEvent} type="text" name="search" placeholder="Search.."/>
+const Input = () => {
+    const [value, setValue] = useState("");
+    // const navigate = useNavigate()
+    // const goSearch = (newValue) => navigate("/search/"+newValue);
+
+    const clickEvent = (e) => {
+        if (e.key === "Enter") {
+            let inputSearch = document.getElementById("inputSearch");
+            let newValue = inputSearch.value;
+            setValue(newValue);
+        }
+    };
+
+    // useEffect(() => {
+    //    // console.log(value);
+    //    //
+    //
+    //     console.log(value)
+    // });
+
+    return (
+        <input id="inputSearch" className={headerStyle.search} onKeyDown={clickEvent} type="text" name="search"
+               placeholder="Search.."/>
     )
 }
 export default HeaderBlock;

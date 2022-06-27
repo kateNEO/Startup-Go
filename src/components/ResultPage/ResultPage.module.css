@@ -1,5 +1,5 @@
 .navCategories {
-    width: 150px;
+    width: 110px;
     height: 800px;
     font-size: 14px;
     padding: 0 10px;
@@ -20,6 +20,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 1%;
+
+    border-left: 0;
+
 }
 @media screen and (min-width: 550px) {
     .navCategories a {
@@ -28,12 +31,13 @@
     }
 
     .navCategories {
-        border-right: 1px solid rgba(204, 202, 239, 0.75);
+        /*border-right: 1px solid rgba(204, 202, 239, 0.75);*/
         width: 250px;
         height: 800px;
         font-size: 20px;
         padding: 0 60px;
         text-align: left;
+
     }
     .allPrjContent{
         margin-top: 0;
@@ -41,6 +45,8 @@
     .allProjectsArea{
         flex-direction: row;
         align-items: flex-start;
-        margin-left: 5%;
+        border-left: 1px solid rgba(204, 202, 239, 0.75);
+        padding-left: 5%;
+        /*margin-left: 5%;*/
     }
 }

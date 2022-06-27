@@ -33,6 +33,8 @@ const FilterProject = (props) => {
     let projectOfCategory = [];
     let {name} = useParams();
     let projectOfCategoryElement;
+    let projectOfSearchResult;
+    console.log(name);
 
     if (name === "all") {
         mappingArr(props.projectItemData)
@@ -41,6 +43,8 @@ const FilterProject = (props) => {
         for (let i = 0; i < props.projectItemData.length; i++) {
             if (props.projectItemData[i].category === name) {
                 projectOfCategory.push(props.projectItemData[i]);
+            // } else {
+            //     if()
             }
         }
 
