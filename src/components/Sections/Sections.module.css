@@ -1,13 +1,14 @@
-.sectionBasicWrapper{
+.sectionWrapper{
     width: 100%;
+    margin-bottom: 110px;
 }
 .basicWrapper{
     text-align: left;
-    border-bottom: 10px solid white;
     background-color:  rgba(142,163,255,0.11);
     padding: 5px 20px;
-    margin: 0;
+    margin: 0 0 15px 0;
     font-size: 14px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 9%);
 }
 
 .headerSections{
@@ -54,7 +55,7 @@
 }
 .inputFile{
     opacity: 0;
-    width: 70%;
+    width: 90%;
     height: 380px;
     position: absolute;
 }
@@ -72,20 +73,24 @@
     border-radius: 0;
     border: 1px solid #cbcbcb;
     font-weight: lighter;
-    height: 30px;
+    height: 22px;
 }
 .select:focus{
     outline: 1px solid rgba(69,133,194,0.86);
     border-radius: 0;
 }
-.option{
-
+option{
+position: absolute;
+    left: 0;
 }
 .textArea{
-
     font-size: 16px;
-    height: 200px;
+    min-height: 200px;
+    border: 1px solid #cbcbcb;
+    width: 90%;
+    background-color: white;
 }
+
 
 .inputNumber{
     width: 100px;
@@ -113,33 +118,105 @@
 
 @media screen and (min-width: 550px) {
     .basicWrapper{
-        margin: 0 15%;
+        margin: 0 25% 15px 25%;
         padding: 15px 30px;
         font-size: 22px;
     }
     .headerSections{
-        margin: 20px 0 20px 17%;
+        margin: 20px 0 20px 25%;
         font-size: 24px;
     }
     .uploader{
         width: 70%;
     }
     .inputText{
-        width: 70%;
+        width: 90%;
         font-weight: lighter;
     }
     .select{
-        width: 70%;
+        width: 90%;
+        height: 30px;
 
     }
     .bottomBasicWrapper{
         padding: 0 20px;
-        margin: 0 15%;
+        margin: 0 25%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 9%);
     }
     .inputFile{
         width: 490px;
     }
     .buttonNext{
 
+    }
+    .textArea{
+        width: 90%;
+    }
+}
+ul li{
+    margin-bottom: 20px;
+}
+/*refactor editor css*/
+.redactorEditor{
+
+}
+.bold{
+    background: url("img/bold-text-option_icon-icons.com_73656.png") no-repeat center;
+    background-size: 20px;
+}
+.italic{
+    background: url("img/italic_120298 (1).png") no-repeat center;
+    background-size: 25px;
+}
+.redactorToolbar{
+    display: flex;
+    width: 90%;
+    height: 30px;
+
+}
+.redactorToolbar button{
+    border: 1px solid #cbcbcb;
+    background-color: white;
+    flex-grow: 1;
+    padding: 1px;
+}
+.leftAlign{
+    background: url("img/align_left_icon_143841.png") no-repeat center;
+    background-size: 20px;
+}
+.centreAlign{
+    background: url("img/align_center_text_icon_148723.png") no-repeat center;
+    background-size: 20px;
+}
+.rightAlign{
+    background: url("img/align_right_icon_143840.png") no-repeat center;
+    background-size: 20px;
+}
+
+.img{
+    background: url("img/gallery_picture_photo_image_icon_218856.png")no-repeat center;
+    width: 40px;
+    height: 100%;
+}
+.buttonImgArea{
+    height: 100%;
+    width: 40px;
+}
+.buttonImgFile{
+    position: inherit;
+    opacity: 0;
+    width: 35px;
+    height: 25px;
+
+}
+.clear{
+    background: url("img/trash_120233.png") no-repeat center;
+    background-size: 20px;
+}
+
+
+@media screen and (min-width: 550px) {
+    .redactorToolbar{
+        width: 90%;
     }
 }

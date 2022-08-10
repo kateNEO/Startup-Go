@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css';
 import axios from "axios";
 
-const url="https://161.35.196.135:5013/api/campaigns/1";
-let n = async () => {
-    const line = await axios.get(url);
-    console.log(line);
-};
-n();
+// const url="https://161.35.196.135:5013/api/campaigns/1";
+// let n = async () => {
+//     const line = await axios.get(url);
+//     console.log(line);
+// };
+//n();
 let menuItemData =[
     {id:1, number:'1', name:'Basic'},
     {id:2, number:'2', name:'Rewards'},

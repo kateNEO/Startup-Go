@@ -3,6 +3,8 @@ import styleResultPage from "./ResultPage.module.css"
 import {useParams} from "react-router-dom";
 import ProjectItem from "../ProjectItem/ProjectItem";
 import Category from "../Categories/Category";
+//import PrintInConsole from "../../services/campaigns_indexes/try";
+//import CampaignsIndexator from "../../services/campaigns_indexes/campaigns-indexer"
 
 
 class ResultPage extends React.Component {
@@ -33,8 +35,9 @@ const FilterProject = (props) => {
     let projectOfCategory = [];
     let {name} = useParams();
     let projectOfCategoryElement;
-    let projectOfSearchResult;
     console.log(name);
+    // PrintInConsole();
+    // CampaignsIndexator.getCampaignsIds(0,3, 1,true);
 
     if (name === "all") {
         mappingArr(props.projectItemData)
@@ -43,8 +46,7 @@ const FilterProject = (props) => {
         for (let i = 0; i < props.projectItemData.length; i++) {
             if (props.projectItemData[i].category === name) {
                 projectOfCategory.push(props.projectItemData[i]);
-            // } else {
-            //     if()
+
             }
         }
 
